@@ -9,7 +9,7 @@ import {
 import axios from "axios";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Context/AuthContextProvider";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -17,7 +17,7 @@ const Login = () => {
   const navigate = useNavigate()
 
   
- const {login,authDetail} = useContext(AuthContext)
+ const {login} = useContext(AuthContext)
  
  
  async function handleLogin() {

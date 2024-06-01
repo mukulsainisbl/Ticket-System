@@ -4,7 +4,7 @@ import {  createContext, useState } from 'react'
  
 const AuthContextProvider = ({children}) => {
  const [authDetail,setAuthDetail] = useState({
-    isLoggedIn:false,
+    isLoggedIn:true,
     token:null
  })
 
